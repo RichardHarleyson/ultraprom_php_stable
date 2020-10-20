@@ -13,8 +13,6 @@ class Admin_Controller extends Controller{
 	}
 
 	public function log_inAction(){
-		// login: ultraprom
-		// pass: zakharov
 		$login_str = md5(strtolower($_POST['login'].$_POST['pass']));
 		if($login_str == 'd6087a60d8e8137561bd09c79b7da636'){
 			$_SESSION['admin'] = true;
